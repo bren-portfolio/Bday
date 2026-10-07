@@ -704,9 +704,9 @@ margin-bottom: 20px;
     animation: float 4s ease-in-out infinite;
 }
 
-.small-cake-top,
+.small-cake-bottom,
 .small-cake-middle,
-.small-cake-bottom {
+.small-cake-top {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -748,28 +748,6 @@ margin-bottom: 20px;
     border-radius: 50%;
 }
 
-.small-drip {
-    position: absolute;
-    top: 5px;
-    width: 18px;
-    height: 25px;
-    background: var(--pink-light);
-    border-radius: 0 0 12px 12px;
-}
-
-.small-drip-one {
-    left: 35px;
-}
-
-.small-drip-two {
-    left: 80px;
-    height: 32px;
-}
-
-.small-drip-three {
-    right: 35px;
-}
-
 .small-candle {
     position: absolute;
     bottom: 210px;
@@ -777,7 +755,7 @@ margin-bottom: 20px;
     height: 55px;
     background: var(--pink-light);
     border-radius: 5px;
-    z-index: 5;
+    z-index: 10;
 }
 
 .small-candle-one {
@@ -794,19 +772,19 @@ margin-bottom: 20px;
     left: 61%;
     transform: rotate(5deg);
 }
+
 .small-flame {
     position: absolute;
-    top: -20px;
-    left: 50%;
     width: 14px;
     height: 22px;
+    top: -20px;
+    left: 50%;
     transform: translateX(-50%);
     background: #e7a95e;
     border-radius: 50%;
     box-shadow: 0 0 18px rgba(231,169,94,.7);
     animation: flame .8s infinite alternate;
 }
-
 /* WISH */
 
 .wish-card {
