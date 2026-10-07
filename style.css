@@ -739,8 +739,10 @@ margin-bottom: 20px;
     content: "";
     position: absolute;
     top: -5px;
+    left: 50%;
     width: 100%;
     height: 17px;
+    transform: translateX(-50%);
     background: var(--pink-light);
     border-radius: 50%;
 }
