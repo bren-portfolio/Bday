@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>For My Love</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<div class="lockscreen" id="lockscreen">
+
+    <div class="lock-decoration decoration-left">♡</div>
+    <div class="lock-decoration decoration-right">♡</div>
+
+    <div class="lock-card" id="lockCard">
+
+        <div class="lock-heart">♡</div>
+
+        <span class="eyebrow">A LITTLE SOMETHING FOR YOU</span>
+
+        <h1>
+            This is just<br>
+            <span>for you.</span>
+        </h1>
+
+        <p>
+            Before you see everything I've prepared,
+            there's one little thing you need to enter.
+        </p>
+
+        <form id="passwordForm">
+
+            <label for="passwordInput">
+                ENTER THE PASSWORD
+            </label>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter password"
+                autocomplete="off"
+            >
+
+            <div class="error-message" id="errorMessage"></div>
+
+            <button type="submit" class="main-button">
+                Unlock
+                <span>♡</span>
+            </button>
+
+        </form>
+
+        <small>
+            A little surprise made with love
+        </small>
+
+    </div>
+
+</div>
+
+
+<div class="website hidden" id="website">
+
+    <audio id="backgroundMusic" src="song.mp3" loop></audio>
+
+
+    <main>
+
+
+        <!-- HOME -->
+
+        <section class="home-section">
+
+            <div class="home-content">
+
+                <span class="eyebrow">
+                    HAPPY BIRTHDAY, MY CHESKA
+                </span>
+
+                <h1>
+                    Today is<br>
+                    all about <span>you.</span>
+                </h1>
+
+                <p>
+                    I made this little space just for you.
+                    Every part of it has something I wanted
+                    you to see, remember, and keep.
+                </p>
+
+                <button class="main-button" id="startButton">
+                    Begin ♡
+                </button>
+
+            </div>
+
+
+            <div class="cake-area">
+
+                <div class="cake-glow"></div>
+
+                <div class="cake">
+
+                    <div class="cake-bottom">
+                        <div class="drip drip-one"></div>
+                        <div class="drip drip-two"></div>
+                        <div class="drip drip-three"></div>
+                    </div>
+
+                    <div class="cake-middle"></div>
+
+                    <div class="cake-top">
+                        <div class="cream"></div>
+                    </div>
+
+                    <div class="candle candle-one">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle candle-two">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle candle-three">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="plate"></div>
+
+                    <div class="cake-text">
+                        happy birthday
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PIECES OF US -->
+
+        <section class="pieces-section" id="memories">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    CUTIEEEE
+                </span>
+
+                <h2>
+                    Little <span>you.</span>
+                </h2>
+
+            
+
+            </div>
+
+
+            <div class="pieces-preview">
+
+                <div class="piece">
+                    <img src="images/image1.jpg" alt="Memory">
+                </div>
+
+                <div class="piece piece-middle">
+                    <img src="images/image2.jpg" alt="Memory">
+                </div>
+
+                <div class="piece">
+                    <img src="images/image3.jpg" alt="Memory">
+                </div>
+
+            </div>
+
+
+            <button class="outline-button" id="galleryButton">
+                See More Pictures
+                <span>→</span>
+            </button>
+
+
+            <div class="full-gallery hidden" id="fullGallery">
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-photo">
+                        <img src="images/image1.jpg" alt="Cheska">
+                    </div>
+
+                    <div class="gallery-photo">
+                        <img src="images/image2.jpg" alt="Cheska">
+                    </div>
+
+                    <div class="gallery-photo">
+                        <img src="images/image3.jpg" alt="Cheska">
+                    </div>
+
+                    <div class="gallery-photo">
+                        <img src="images/image4.jpg" alt="Cheska">
+                    </div>
+
+                    <div class="gallery-photo">
+                        <img src="images/image5.jpg" alt="Cheska">
+                    </div>
+
+                    <div class="gallery-photo">
+                        <img src="images/image6.jpg" alt="Cheska">
+                    </div>
+
+                    <div class="gallery-photo">
+                        <img src="images/image7.jpg" alt="Cheska">
+                    </div>
+
+                    <div class="gallery-photo">
+                        <img src="images/image8.jpg" alt="Cheska">
+                    </div>
+
+                    <div class="gallery-photo">
+                        <img src="images/image9.jpg" alt="Cheska">
+                    </div>
+
+                    <div class="gallery-photo">
+                        <img src="images/image10.jpg" alt="Cheska">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MESSAGE -->
+
+        <section class="message-section">
+
+            <span class="eyebrow">
+                FOR YOU
+            </span>
+
+            <h2>
+                You deserve<br>
+                a beautiful <span>day.</span>
+            </h2>
+
+            <p>
+                I hope this little website reminds you
+                how special you are to me.
+            </p>
+
+            <button class="main-button" id="messageButton">
+                Read Something ♡
+            </button>
+
+
+            <div class="message-card hidden" id="messageCard">
+
+                <div class="message-heart">♡</div>
+
+                <p>
+    I may not always know the perfect words
+    to say, but I hope you know how much I appreciate
+    you, even when I don't always know how to show it.
+</p>
+
+<p>
+    Thank you for the memories, our laugh-laugh,
+    xes hehe, and all the little
+    moments that became special simply because
+    they were with you.
+</p>
+
+<p class="message-ending">
+    Happy birthday, Baby. I love you. ♡
+</p>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- LETTER -->
+
+        <section class="letter-section">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    WORDS I WANT YOU TO KEEP
+                </span>
+
+                <h2>
+                    A letter <span>for you.</span>
+                </h2>
+
+                <p>
+                    There's something I wanted to say.
+                </p>
+
+            </div>
+
+
+            <button class="outline-button" id="letterButton">
+                Open My Letter
+                <span>♡</span>
+            </button>
+
+
+            <article class="letter-card hidden" id="letterCard">
+
+                <div class="letter-top">
+                    ♡
+                    <br><br>
+                    To my Baby, Cheska,
+                </div>
+
+                <div class="letter-body">
+
+                    <p>
+                        Happy birthday, Baby. ♡
+                    </p>
+
+                    <p>
+                        I honestly don't know if a website is enough
+                        to express everything I want to say to you,
+                        but I still wanted to make something that you
+                        could keep and look back to whenever you want.
+                    </p>
+
+                    <p>
+                        First of all, I want you to know how thankful
+                        I am that I met you. Out of all the people I
+                        could have met, somehow I got to know you,
+                        spend time with you, laugh with you, and make
+                        memories with you.
+                    </p>
+
+                    <p>
+                        I know I'm not always the best when it comes
+                        to expressing what I feel. Sometimes I don't
+                        know the right words to say, sometimes I don't
+                        show enough, but please know that you are
+                        important to me.
+                    </p>
+
+                    <p>
+                        I appreciate the little things about you.
+                        The way you talk, the way you react to random
+                        things, our conversations, the jokes, and even
+                        the simple days that don't seem special at first.
+                        Somehow, when those moments are with you,
+                        they become memories I want to keep.
+                    </p>
+
+                    <p>
+                        On your birthday, I don't just wish for you
+                        to have a good day. I hope this entire year
+                        becomes good to you. I hope you get closer to
+                        the things you dream about, become more
+                        confident in yourself, and get opportunities
+                        that make you proud.
+                    </p>
+
+                    <p>
+                        You don't have to have everything figured out
+                        right away. You are allowed to grow slowly,
+                        make mistakes, rest, and start again.
+                        Whatever direction you choose, I hope you
+                        choose the one that makes you genuinely happy.
+                    </p>
+
+                    <p>
+                        Thank you for all the memories we've already
+                        made. Thank you for the conversations, mga 
+                        asaran, random jokes, and everything
+                        that became part of our story.
+                    </p>
+
+                    <p>
+                        I hope someday we can look back at this and
+                        laugh at how simple it was, while remembering
+                        everything that happened after it. I hope we
+                        get more pictures, more dates, more random
+                        conversations, more laughs, more memories,
+                        and more hehe.
+                    </p>
+
+                    <p>
+                        Most importantly, Baby, I hope you always
+                        remember that you are loved, appreciated,
+                        and worth celebrating. You deserve happiness
+                        not only today, but on all the ordinary days
+                        after your birthday too.
+                    </p>
+
+                    <p>
+                        So enjoy your day. Eat your favorite food (like me),
+                        smile as much as you can, take lots of pictures,
+                        and enjoy every little moment.
+                    </p>
+
+                    <p>
+                        Happy birthday again, Baby. Thank you for
+                        being you, and thank you for letting me be
+                        part of your life.
+                    </p>
+
+                    <p class="letter-love">
+                        Happy Birthday, my Baby. I love you. ♡
+                    </p>
+
+                </div>
+
+                <div class="letter-sign">
+                    Always,<br>
+                    Your cute BF ♡
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- YOUTUBE -->
+
+        <section class="video-section">
+
+            <span class="eyebrow">
+                A LITTLE SOMETHING
+            </span>
+
+            <h2>
+                One more thing <span>for you.</span>
+            </h2>
+
+            <p>
+                There's something I wanted you to see.
+            </p>
+
+            <button class="main-button" id="videoButton">
+                Open the Surprise
+                <span>✦</span>
+            </button>
+
+
+            <div class="video-card hidden" id="videoCard">
+
+                <div class="video-wrapper">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/4XGR6RyYqGY"
+                        title="A little surprise"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <p>
+                    A little something I wanted you to see hehe. ♡
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL SURPRISE -->
+
+        <section class="surprise-section">
+
+            <span class="eyebrow">
+                ONE LAST THING
+            </span>
+
+            <h2>
+                Make a wish, <span>Baby.</span>
+            </h2>
+
+            <p>
+                Before you leave, I want you to make one last wish.
+            </p>
+
+
+            <div class="small-cake">
+
+                <div class="small-cake-top"></div>
+                <div class="small-cake-middle"></div>
+                <div class="small-cake-bottom"></div>
+
+                <div class="small-candle one">
+                    <div class="small-flame"></div>
+                </div>
+
+                <div class="small-candle two">
+                    <div class="small-flame"></div>
+                </div>
+
+                <div class="small-candle three">
+                    <div class="small-flame"></div>
+                </div>
+
+            </div>
+
+
+            <button class="main-button" id="wishButton">
+                Make a Wish
+                <span>✦</span>
+            </button>
+
+
+            <div class="wish-card hidden" id="wishCard">
+
+                <div class="wish-heart">♡</div>
+
+                <h3>
+                    My wish for you...
+                </h3>
+
+                <p>
+                    I wish that this year will be kind to you.
+                    I wish that you find more reasons to smile,
+                    more things to be excited about, and more
+                    moments that make you realize how capable
+                    you are.
+                </p>
+
+                <p>
+                    And if I could make one wish for us too,
+                    I hope we continue making memories together,
+                    supporting each other, laughing at random
+                    things, and enjoying even the simplest days.
+                </p>
+
+                <strong>
+                    Happy Birthday, Baby, my Cheska. ♡
+                </strong>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        Made especially for Cheska ♡
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
