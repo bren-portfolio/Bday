@@ -693,45 +693,93 @@ margin-bottom: 20px;
 }
 
 /* =========================
-   WISH CAKE
+   SMALL CAKE
 ========================= */
 
-.wish-cake {
-    width: 420px;
-    max-width: 90vw;
-    margin: 25px auto 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: wishCakeFloat 4s ease-in-out infinite;
+.small-cake {
+    width: 280px;
+    height: 260px;
+    position: relative;
+    margin: 10px auto 25px;
+    animation: float 4s ease-in-out infinite;
 }
 
-.wish-cake-svg {
+.small-cake-top,
+.small-cake-middle,
+.small-cake-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, #b86d78, #8e4c58);
+    box-shadow: 0 15px 30px rgba(0,0,0,.2);
+}
+
+.small-cake-top {
+    width: 160px;
+    height: 55px;
+    bottom: 150px;
+    border-radius: 10px 10px 15px 15px;
+}
+
+.small-cake-middle {
+    width: 210px;
+    height: 65px;
+    bottom: 90px;
+    border-radius: 10px 10px 18px 18px;
+}
+
+.small-cake-bottom {
+    width: 260px;
+    height: 75px;
+    bottom: 25px;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.small-cake-top::before {
+    content: "";
+    position: absolute;
+    top: -5px;
     width: 100%;
-    height: auto;
-    display: block;
-    overflow: visible;
+    height: 17px;
+    background: var(--pink-light);
+    border-radius: 50%;
 }
 
-@keyframes wishCakeFloat {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
+.small-candle {
+    position: absolute;
+    bottom: 205px;
+    width: 13px;
+    height: 52px;
+    background: var(--pink-light);
+    border-radius: 5px;
+    z-index: 5;
 }
 
-@media (max-width: 600px) {
-
-    .wish-cake {
-        width: 340px;
-    }
-
+.small-candle.one {
+    left: 38%;
 }
 
+.small-candle.two {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.small-candle.three {
+    left: 62%;
+}
+
+.small-flame {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 14px;
+    height: 21px;
+    transform: translateX(-50%);
+    background: #e7a95e;
+    border-radius: 50%;
+    box-shadow: 0 0 18px rgba(231,169,94,.7);
+    animation: flame .8s infinite alternate;
+}
 
 /* WISH */
 
