@@ -951,3 +951,182 @@ to {
 }
 
 }
+/* =========================
+   FINAL CAKE - FIXED
+========================= */
+
+.final-cake {
+    position: relative !important;
+    width: 340px !important;
+    height: 300px !important;
+    margin: 35px auto 35px !important;
+    display: block !important;
+    transform: none !important;
+}
+
+
+/* PLATE */
+
+.final-plate {
+    position: absolute !important;
+    width: 300px !important;
+    height: 18px !important;
+    left: 20px !important;
+    bottom: 15px !important;
+    background: #f6d9e5 !important;
+    border-radius: 50% !important;
+    z-index: 1 !important;
+}
+
+
+/* BOTTOM LAYER */
+
+.final-cake-bottom {
+    position: absolute !important;
+    width: 260px !important;
+    height: 70px !important;
+    left: 40px !important;
+    bottom: 30px !important;
+    background: #ad626f !important;
+    border-radius: 12px 12px 22px 22px !important;
+    z-index: 2 !important;
+}
+
+
+/* MIDDLE LAYER */
+
+.final-cake-middle {
+    position: absolute !important;
+    width: 210px !important;
+    height: 62px !important;
+    left: 65px !important;
+    bottom: 92px !important;
+    background: #b96c79 !important;
+    border-radius: 11px 11px 17px 17px !important;
+    z-index: 3 !important;
+}
+
+
+/* TOP LAYER */
+
+.final-cake-top {
+    position: absolute !important;
+    width: 160px !important;
+    height: 55px !important;
+    left: 90px !important;
+    bottom: 147px !important;
+    background: #c47784 !important;
+    border-radius: 10px 10px 15px 15px !important;
+    z-index: 4 !important;
+}
+
+
+/* FROSTING */
+
+.final-frosting {
+    position: absolute !important;
+    width: 160px !important;
+    height: 20px !important;
+    left: 0 !important;
+    top: -8px !important;
+    background: #f6d9e5 !important;
+    border-radius: 50% !important;
+    z-index: 5 !important;
+}
+
+
+/* FROSTING DRIPS */
+
+.final-frosting::before,
+.final-frosting::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 14px !important;
+    height: 20px !important;
+    top: 8px !important;
+    background: #f6d9e5 !important;
+    border-radius: 0 0 10px 10px !important;
+}
+
+.final-frosting::before {
+    left: 38px !important;
+}
+
+.final-frosting::after {
+    right: 38px !important;
+}
+
+
+/* CANDLES */
+
+.final-candle {
+    position: absolute !important;
+    width: 14px !important;
+    height: 52px !important;
+    bottom: 200px !important;
+    background: #f6d9e5 !important;
+    border-radius: 5px !important;
+    z-index: 10 !important;
+}
+
+
+/* LEFT CANDLE */
+
+.final-candle-left {
+    left: 132px !important;
+}
+
+
+/* CENTER CANDLE */
+
+.final-candle-center {
+    left: 163px !important;
+}
+
+
+/* RIGHT CANDLE */
+
+.final-candle-right {
+    left: 194px !important;
+}
+
+
+/* FLAMES */
+
+.final-flame {
+    position: absolute !important;
+    width: 14px !important;
+    height: 21px !important;
+    left: 0 !important;
+    top: -22px !important;
+    background: #e7a95e !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 15px rgba(231,169,94,.8) !important;
+    animation: finalFlame 1s ease-in-out infinite alternate !important;
+}
+
+
+@keyframes finalFlame {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.8);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .final-cake {
+        transform: scale(.8) !important;
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+    }
+
+}
