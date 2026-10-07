@@ -780,21 +780,20 @@ margin-bottom: 20px;
     z-index: 5;
 }
 
-.small-candle.one {
+.small-candle-one {
     left: 39%;
     transform: rotate(-5deg);
 }
 
-.small-candle.two {
+.small-candle-two {
     left: 50%;
     transform: translateX(-50%);
 }
 
-.small-candle.three {
+.small-candle-three {
     left: 61%;
     transform: rotate(5deg);
 }
-
 .small-flame {
     position: absolute;
     top: -20px;
