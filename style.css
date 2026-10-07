@@ -693,192 +693,27 @@ margin-bottom: 20px;
 }
 
 /* =========================
-   FINAL BIRTHDAY CAKE
+   WISH CAKE
 ========================= */
 
-.small-cake {
-    position: relative;
-    width: 320px;
-    height: 300px;
-    margin: 35px auto 30px;
+.wish-cake {
+    width: 420px;
+    max-width: 90vw;
+    margin: 25px auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: wishCakeFloat 4s ease-in-out infinite;
 }
 
-
-/* PLATE */
-
-.cake-plate {
-    position: absolute;
-    left: 50%;
-    bottom: 18px;
-    transform: translateX(-50%);
-    width: 300px;
-    height: 18px;
-    background: #f3dfe7;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-
-/* CAKE TIERS */
-
-.cake-tier {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(
-        180deg,
-        #c47784 0%,
-        #a95d6b 100%
-    );
-    box-shadow:
-        inset 0 -8px 0 rgba(80, 35, 45, .12),
-        0 10px 20px rgba(0, 0, 0, .18);
-}
-
-
-/* BOTTOM */
-
-.cake-tier-bottom {
-    bottom: 35px;
-    width: 260px;
-    height: 70px;
-    border-radius: 12px 12px 22px 22px;
-}
-
-
-/* MIDDLE */
-
-.cake-tier-middle {
-    bottom: 98px;
-    width: 210px;
-    height: 62px;
-    border-radius: 11px 11px 17px 17px;
-}
-
-
-/* TOP */
-
-.cake-tier-top {
-    bottom: 154px;
-    width: 160px;
-    height: 55px;
-    border-radius: 10px 10px 15px 15px;
-}
-
-
-/* FROSTING */
-
-.cake-frosting {
-    position: absolute;
-    top: -8px;
-    left: 0;
+.wish-cake-svg {
     width: 100%;
-    height: 18px;
-    background: #f6d9e5;
-    border-radius: 50%;
+    height: auto;
+    display: block;
+    overflow: visible;
 }
 
-
-/* LITTLE FROSTING DRIPS */
-
-.cake-frosting::before,
-.cake-frosting::after {
-    content: "";
-    position: absolute;
-    top: 7px;
-    width: 14px;
-    height: 18px;
-    background: #f6d9e5;
-    border-radius: 0 0 10px 10px;
-}
-
-.cake-frosting::before {
-    left: 28px;
-}
-
-.cake-frosting::after {
-    right: 28px;
-}
-
-
-/* =========================
-   CANDLES
-========================= */
-
-.small-candle {
-    position: absolute;
-    bottom: 207px;
-    width: 14px;
-    height: 52px;
-    background: repeating-linear-gradient(
-        45deg,
-        #f6d9e5 0,
-        #f6d9e5 7px,
-        #e7a9c2 7px,
-        #e7a9c2 10px
-    );
-    border-radius: 5px;
-    z-index: 10;
-}
-
-
-/* PERFECTLY CENTERED CANDLES */
-
-.candle-left {
-    left: calc(50% - 30px);
-}
-
-.candle-center {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.candle-right {
-    left: calc(50% + 16px);
-}
-
-
-/* FLAMES */
-
-.small-flame {
-    position: absolute;
-    left: 50%;
-    top: -21px;
-    transform: translateX(-50%);
-    width: 14px;
-    height: 21px;
-    background: #e7a95e;
-    border-radius: 50% 50% 45% 45%;
-    box-shadow:
-        0 0 8px #e7a95e,
-        0 0 18px rgba(231, 169, 94, .6);
-    animation: smallFlame 0.8s ease-in-out infinite alternate;
-}
-
-
-/* FLAME ANIMATION */
-
-@keyframes smallFlame {
-
-    from {
-        transform: translateX(-50%) scale(1);
-    }
-
-    to {
-        transform: translateX(-50%) scale(.82);
-    }
-
-}
-
-
-/* CAKE FLOAT */
-
-.small-cake {
-    animation: cakeFloat 4s ease-in-out infinite;
-}
-
-@keyframes cakeFloat {
-
+@keyframes wishCakeFloat {
     0%,
     100% {
         transform: translateY(0);
@@ -887,21 +722,17 @@ margin-bottom: 20px;
     50% {
         transform: translateY(-8px);
     }
-
 }
-
-
-/* MOBILE */
 
 @media (max-width: 600px) {
 
-    .small-cake {
-        transform: scale(.82);
-        margin-top: 10px;
-        margin-bottom: 0;
+    .wish-cake {
+        width: 340px;
     }
 
 }
+
+
 /* WISH */
 
 .wish-card {
